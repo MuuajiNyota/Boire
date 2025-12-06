@@ -16,6 +16,7 @@
       --text-soft: #9ca3af;
       --radius: 16px;
     }
+/* Images */
 .Terre img {
   max-width: 100%;
   height: auto;
@@ -24,6 +25,7 @@
   margin-bottom: 16px;
 }
 
+/* Layout principal */
 .layout {
   display: grid;
   gap: 24px;
@@ -39,20 +41,24 @@
   }
 }
 
+/* Body */
 body {
   padding: 24px 12px; /* padding horizontal réduit pour petits écrans */
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  /* align-items: flex-start;  optionnel selon besoin */
 }
 
+/* Main */
 main {
   width: 100%;
   max-width: 960px;
-  padding: 0 12px;
+  padding: 0; /* éviter double padding */
   display: grid;
   gap: 24px;
 }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -278,6 +284,7 @@ main {
   </main>
 </body>
 </html>
+
 
 
 
