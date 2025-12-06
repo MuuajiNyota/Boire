@@ -16,7 +16,43 @@
       --text-soft: #9ca3af;
       --radius: 16px;
     }
+.Terre img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+}
 
+.layout {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr; /* une colonne par défaut */
+  align-items: start;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .layout {
+    grid-template-columns: 260px 1fr; /* deux colonnes à partir de 600px */
+    align-items: center;
+  }
+}
+
+body {
+  padding: 24px 12px; /* padding horizontal réduit pour petits écrans */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  padding: 0 12px;
+  display: grid;
+  gap: 24px;
+}
     * {
       box-sizing: border-box;
       margin: 0;
@@ -242,6 +278,7 @@
   </main>
 </body>
 </html>
+
 
 
 
